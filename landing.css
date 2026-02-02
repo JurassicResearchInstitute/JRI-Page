@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  background: #0f1b14;
+  color: #e8e6d8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #0b140f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header nav a {
+  color: #c9c6a5;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.hero {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.734)),
+    url("assets/hero-bg.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-trex {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.734)),
+    url("assets/trexBG.png ") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-raptor {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.734)),
+    url("assets/raptorBG.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-herb {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.734)),
+    url("assets/ankylBG.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-meso {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.734)),
+    url("assets/mesoBG.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #c7a34a;
+  color: #1b1b1b;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section.alt {
+  background: #13241b;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.blog-card {
+  background: #1b3025;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.blog-card h3 {
+  margin: 8px 0;
+}
+
+.meta {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.reports {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.report {
+  background: #1b3025;
+  padding: 20px;
+  border-left: 4px solid #c7a34a;
+}
+
+.footer {
+  background: #0b140f;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* FULL-WIDTH BLOG CARD */
+.blog-card-wide {
+  grid-column: 1 / -1;
+}
+
+/* MOBILE RESET */
+@media (max-width: 768px) {
+  .blog-card-wide {
+    grid-column: auto;
+  }
+}
+
